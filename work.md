@@ -22,16 +22,16 @@ Macroeconomic data under normal and stressed conditions from FED<br>
 WorkFlow:
 
 1) 
--> Action: Collect/Scrape initial raw data__
--> Status: __
--> To Do: Run the scripts->(fs_yahoo - for 2 financials, run scrape_1_stmt())(uslocs - update banks list and run scrape_all_banks()) __
--> Desc: __
+-> Action: Collect/Scrape initial raw data
+-> Status: <br>
+-> To Do: Run the scripts->(fs_yahoo - for 2 financials, run scrape_1_stmt())(uslocs - update banks list and run scrape_all_banks()) <br>
+-> Desc: <br>
 > Wrote scripts for YF and UsLocs - Financial statements and basic data; scraped income-stmts
 
 2) 
--> Action: Transform, clean, convert and extract datasets__
--> Status:__
--> To Do:__
--> Desc: __
+-> Action: Transform, clean, convert and extract datasets<br>
+-> Status:<br>
+-> To Do:<br>
+-> Desc: <br>
 
 
