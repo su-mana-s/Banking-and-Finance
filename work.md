@@ -5,14 +5,14 @@ For more Data:
 
 Do These:
 
-1) See if monthly financial stmts(bs, is) available,  else do quarterly and also find monthly/qtrly macroeconomic data accordingly. 
--------------------------Did - annual--------------------------------
-> Then You should be able to calculate current and quick ratios
+1) See if monthly financial stmts(bs, is) available,  else do quarterly and also find monthly/qtrly macroeconomic data accordingly.<br> 
+-------------------------Did - annual--------------------------------<br>
+> Then You should be able to calculate current and quick ratios<br>
 https://www.investopedia.com/terms/l/liquidityratios.asp
 
-2) Scrape Yahoo for f stmts, uslocs for other data n fed:-----------------------Done
-Macroeconomic data under normal and stressed conditions from FED
-===========Downloadable csv - need to concat dfs================================
+2) Scrape Yahoo for f stmts, uslocs for other data n fed:-----------------------Done<br>
+Macroeconomic data under normal and stressed conditions from FED<br>
+===========Downloadable csv - need to concat dfs================================<br>
 
 3) Read: https://www.bis.org/bcbs/publ/d424_hlsummary.pdf (pg 15, wts)
 
