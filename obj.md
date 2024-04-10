@@ -53,6 +53,7 @@ Ideas:
 
 
 
+
  Terms:
 
 - Scenario analysis is basically simulated values for various attributes or factors tht are expected to occur according to  the scenario and then predicting the dependent variable and further figuring out how the entire portfolio is affected because of the effect of the dependent vars on the independen var for that scenario
