@@ -19,9 +19,18 @@ def clean_vals(s):
     i = int(st)
     return i
 
-def get_merged_dataset(query):
-    sc = pd.read_csv("../../data/raw/dfast/Historic_Domestic.csv", index_col=False)
-    df = pd.read_csv("../../data/raw/uslocs/banks_income_expense_final.csv", index_col=False)
+def get_merged_dataset(query, sc, df):
+    # sc = pd.read_csv("../../data/raw/dfast/Historic_Domestic.csv", index_col=False)
+    # df = pd.read_csv("../../data/raw/uslocs/banks_income_expense_final.csv", index_col=False)
+
+    sc_n = pd.read_csv("../../data/processed/normalized_histdomestic.csv")
+    # df_n =  pd.read_csv("../../data/processed/uslocs/normalized_usbanksincome.csv")
+
+    # cd = dict(zip(df.columns, df_n.columns))
+    # df = df.rename(columns=cd)
+    # cd = dict(zip(sc.columns, sc_n.columns))
+    # sc = sc.rename(columns=cd)
+
 
     #query 1 class Tag where query is string like : 'Total Assets:'
     r = df.query(f"Bank == {query}")

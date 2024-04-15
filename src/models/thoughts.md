@@ -26,7 +26,7 @@ Now the question arises - 1 answer set is going to contain a lot of predictions 
  
  >Or, its ulta- trading book exposure has multiple varieties of risk- including market risk and liquidity risk and credit risk
 
- - If you want to analyse trading portfolio market risk, you need time_ti_liquidate transactions along with the holdings portfolio
+ - If you want to analyse trading portfolio market risk, you need time_to_liquidate transactions along with the holdings portfolio
 
  >  Worst case, get holdings portfolio and do VaR and corr analysis to get overall risk, diversification with no time bounds
 
