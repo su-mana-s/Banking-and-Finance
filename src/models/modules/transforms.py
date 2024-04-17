@@ -41,9 +41,9 @@ def get_merged_dataset(query, sc, df):
     #Transform dates
     cols = [col for col in r.columns]
     columns = cols[1:]    
-    for col in columns:
-        # print(r[f'{col}'])
-        r[f'{col}'] = r[f'{col}'].apply(lambda x : clean_vals(x))
+    # for col in columns:
+    #     # print(r[f'{col}'])
+    #     r[f'{col}'] = r[f'{col}'].apply(lambda x : clean_vals(x))
     d2q = {col : date_to_qtr(col) for col in columns}
     n_df = r.rename(columns=d2q)
 
@@ -66,3 +66,21 @@ def get_merged_dataset(query, sc, df):
     result = sc.merge(right=ndf, on="Date")
     
     return result #merged df
+
+def change_names(df):
+    df = df.rename(columns={'Unemployment rate': 'unempr', 
+                    'House Price Index (Level)':'houseprice', 
+                    'Commercial Real Estate Price Index (Level)' : 'realEstate',
+                    '10-year Treasury yield' : 'ten', "5-year Treasury yield" : 'five',
+                    '3-month Treasury rate': 'threemon', 'CPI inflation rate' : 'cpiInflation', 
+                    'Dow Jones Total Stock Market Index (Level)': "djstock", 
+                    "Market Volatility Index (Level)":'market', 'BBB corporate yield':'corpyeild', 'Mortgage rate':'mortgage',
+                    'Prime rate':'prime', 'Nominal disposable income growth': 'nom_incgrowth',
+                    'Real disposable income growth':'real_incgrowth','Real GDP growth': 'realgdp','Nominal GDP growth':'nomgdp'})
+    return df
+
+def change_regressand_names(pred_df, target_d):
+    
+    pred_df = pred_df.rename(columns=target_d)
+    pred_df = pred_df.loc[:,~pred_df.columns.duplicated()].copy()
+    return pred_df
